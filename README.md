@@ -28,7 +28,7 @@ If set to true, a vhosts file, managed by this role's variables (see below), wil
       # Additional optional properties: 'serveradmin, extra_parameters'.
       - {servername: "local.dev", documentroot: "/var/www/html"}
 
-Add a set of properties per virtualhost, including `servername` (required), `documentroot` (required), `serveradmin` (optional: the admin email address for this server), and `extra_parameters` (you can add whatever you'd like in here).
+Add a set of properties per virtualhost, including `servername` (required), `documentroot` (required), `serveralias` (optional: alternate names for the vhost), `serveradmin` (optional: the admin email address for this vhost), and `extra_parameters` (you can add whatever you'd like in here).
 
 Note that this role doesn't configure SSL support out of the box; you would need to add in additional tasks to listen on port 443 and add your own VirtualHost directives for SSL. This may be improved in the future :)
 
